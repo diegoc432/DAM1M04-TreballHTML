@@ -60,6 +60,34 @@
     </div>
 </main>
 
+<form class="expedition-form">
+    <h3>Envia una petició</h3>
+    
+    <div class="input-group">
+        <label>Nom complet</label>
+        <input type="text" placeholder="Ex: Indiana Jones" required>
+    </div>
+
+    <div class="input-group">
+        <label>Telèfon (9 dígits)</label>
+        <input type="tel" pattern="[0-9]{9}" placeholder="600123456" required>
+        <span class="error-msg">El telèfon ha de tenir 9 números</span>
+    </div>
+
+    <div class="input-group">
+        <label>Correu electrònic</label>
+        <input type="email" placeholder="explorador@aventura.com" required>
+        <span class="error-msg">Introdueix un email vàlid</span>
+    </div>
+
+    <div class="input-group">
+        <label>La teva petició</label>
+        <textarea rows="4" placeholder="Què ens vols preguntar?" required></textarea>
+    </div>
+
+    <button type="submit" class="btn-hero">Enviar Expedició</button>
+</form>
+
 <footer>
     <div class="footer-content">
         <p>&copy; 2026 Exploradores Joc de Taula. Tots els drets reservats.</p>
