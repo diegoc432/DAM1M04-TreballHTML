@@ -197,3 +197,48 @@ footer {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
 }
+
+/* ESTILS PÀGINA DE CONTACTE */
+.contact-layout {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /* Perquè al mòbil es posi un sota de l'altre */
+    margin-top: 30px;
+}
+
+.contact-info, .contact-form-wrapper {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-top: 25px;
+    border-radius: 15px;
+    overflow: hidden; /* Perquè les cantonades del mapa siguin arrodonides */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    line-height: 0; /* Treu espais estranys sota l'iframe */
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
