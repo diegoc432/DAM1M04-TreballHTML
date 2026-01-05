@@ -88,3 +88,39 @@ footer {
 .social-icons a:hover {
     color: var(--accent-color);
 }
+
+.hero {
+    height: 80vh; /* Ocupa el 80% de l'altura de la pantalla */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: var(--white); /* Sobreescribim el blau fosc per a que es vegi sobre el fons */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.btn-hero {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-titles);
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.btn-hero:hover {
+    transform: scale(1.1);
+    background-color: #e67e22;
+}
