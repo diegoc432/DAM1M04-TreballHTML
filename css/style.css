@@ -124,3 +124,42 @@ footer {
     transform: scale(1.1);
     background-color: #e67e22;
 }
+
+/* Secció: com es juga */
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.mechanics-grid {
+    display: flex; /* Tornem a usar Flexbox */
+    gap: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Per a que es vegi bé al mòbil */
+}
+
+.mechanic-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.mechanic-card:hover {
+    transform: translateY(-10px);
+}
+
+.mechanic-card .material-icons {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
