@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #2c3e50;    /* Blau fosc */
+    --accent-color: #d35400;     /* Taronja aventura */
+    --bg-light: #fdfaf5;         /* Un blanc "vellutat" */
+    --text-dark: #2d3436;        /* Color del text principal */
+    --white: #ffffff;
+    --transition: all 0.3s ease; /* Animacions suaus */
+}
+
+/* 2. RESET BÀSIC */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Scroll  */
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+ 
+    font-family: sans-serif; 
+}
+
+/* 3. CONTENIDOR GENÈRIC (Per centrar) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
