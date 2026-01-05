@@ -5,6 +5,10 @@
     --text-dark: #2d3436;        /* Color del text principal */
     --white: #ffffff;
     --transition: all 0.3s ease; /* Animacions suaus */
+    /* NOVES VARIABLES DE FONT */
+    --font-titles: 'Bebas Neue', cursive;
+    --font-body: 'Lato', sans-serif;
+    
 }
 
 /* 2. RESET BÀSIC */
@@ -22,8 +26,12 @@ body {
     background-color: var(--bg-light);
     color: var(--text-dark);
     line-height: 1.6;
- 
-    font-family: sans-serif; 
+    font-family: var(--font-body);
+}
+
+h1, h2, h3, .nav-links a {
+    font-family: var(--font-titles); /* Font per a títols i menú */
+    letter-spacing: 1px;
 }
 
 /* 3. CONTENIDOR GENÈRIC (Per centrar) */
