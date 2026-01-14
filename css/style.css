@@ -297,3 +297,52 @@ footer {
 .input-group input:invalid:not(:placeholder-shown) ~ .error-msg {
     display: block;
 }
+
+
+/* ABOUT US STYLES */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dividim en dues columnes (Grid) */
+    gap: 40px;
+    align-items: start;
+}
+
+.team-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.team-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: var(--white);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Ràtio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive per a mòbils */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
