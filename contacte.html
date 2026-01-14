@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Exploradores | Contacte</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -34,7 +32,7 @@
 
     <div class="contact-layout">
         <div class="contact-info animate-fade delay-1">
-            <h3>Sede Central de Recerca</h3>
+            <h3>Seu Central de Recerca</h3>
             <p>Descobreix on neixen les nostres expedicions al cor d'Europa, on es va gestar el joc original.</p>
             
             <p><span class="material-icons">place</span> Kosmos Verlag, Pfizerstraße 5, 70184 Stuttgart, Alemanya</p>
@@ -50,49 +48,59 @@
             </p>
 
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.83733564943!2d9.186592276856037!3d48.76594260714493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799db65f7c3f847%3A0x6b3b5ec1e2d4f9b!2sKOSMOS%20Verlag!5e0!3m2!1sca!2ses!4v1700000000000" 
-                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.475472851834!2d9.18684137689945!3d48.77281310672106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c0da27521757%3A0x673456721d607498!2sKOSMOS%20Verlag!5e0!3m2!1sca!2ses!4v1700000000000!5m2!1sca!2ses" 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
         </div>
 
         <div class="contact-form-wrapper animate-fade delay-2">
-            </div>
+            <form class="expedition-form">
+                <h3>Envia una petició</h3>
+                
+                <div class="input-group">
+                    <label>Nom complet</label>
+                    <input type="text" placeholder="Ex: Indiana Jones" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Telèfon (9 dígits)</label>
+                    <input type="tel" pattern="[0-9]{9}" placeholder="600123456" required>
+                    <span class="error-msg">El telèfon ha de tenir 9 números</span>
+                </div>
+
+                <div class="input-group">
+                    <label>Correu electrònic</label>
+                    <input type="email" placeholder="explorador@aventura.com" required>
+                    <span class="error-msg">Introdueix un email vàlid</span>
+                </div>
+
+                <div class="input-group">
+                    <label>La teva petició</label>
+                    <textarea rows="4" placeholder="Què ens vols preguntar?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-hero">Enviar Expedició</button>
+            </form>
+        </div>
     </div>
 </main>
 
-<form class="expedition-form">
-    <h3>Envia una petició</h3>
-    
-    <div class="input-group">
-        <label>Nom complet</label>
-        <input type="text" placeholder="Ex: Indiana Jones" required>
-    </div>
-
-    <div class="input-group">
-        <label>Telèfon (9 dígits)</label>
-        <input type="tel" pattern="[0-9]{9}" placeholder="600123456" required>
-        <span class="error-msg">El telèfon ha de tenir 9 números</span>
-    </div>
-
-    <div class="input-group">
-        <label>Correu electrònic</label>
-        <input type="email" placeholder="explorador@aventura.com" required>
-        <span class="error-msg">Introdueix un email vàlid</span>
-    </div>
-
-    <div class="input-group">
-        <label>La teva petició</label>
-        <textarea rows="4" placeholder="Què ens vols preguntar?" required></textarea>
-    </div>
-
-    <button type="submit" class="btn-hero">Enviar Expedició</button>
-</form>
-
 <footer>
     <div class="footer-content">
-        <p>&copy; 2026 Exploradores Joc de Taula. Tots els drets reservats.</p>
+        <p>© 2026 Exploradores Joc de Taula. Tots els drets reservats.</p>
         <div class="social-icons">
-            <a href="#"><span class="material-icons">share</span></a> <a href="#"><span class="material-icons">camera_alt</span></a> <a href="#"><span class="material-icons">facebook</span></a> <a href="#"><span class="material-icons">videocam</span></a> </div>
+            <a href="#"><span class="material-icons">share</span></a> 
+            <a href="#"><span class="material-icons">camera_alt</span></a> 
+            <a href="#"><span class="material-icons">facebook</span></a> 
+            <a href="#"><span class="material-icons">videocam</span></a> 
+        </div>
     </div>
 </footer>
 
